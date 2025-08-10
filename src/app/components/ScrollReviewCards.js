@@ -192,7 +192,6 @@ export default function ScrollReviewCards() {
           />
         </div>
         
-        {/* Dot indicators */}
         <div className="mt-8 flex justify-center space-x-2">
           {reviews.map((_, index) => (
             <button
@@ -269,7 +268,7 @@ function ReviewCard({ review, isAnimating, animationDirection }) {
         </div>
       </div>
       <blockquote className="text-white/90 text-lg leading-relaxed transition-colors duration-300 italic">
-        "{review.text}"
+        &quot;{review.text}&quot;
       </blockquote>
     </div>
   );

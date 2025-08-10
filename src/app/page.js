@@ -126,9 +126,7 @@ export default function WeddingPortfolio () {
   }, [currentImageIndex, isHeroMode])
 
   return (
-<div 
-  className=' bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 bg-no-repeat bg-cover bg-center'
->
+    <div className=' bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 bg-no-repeat bg-cover bg-center'>
       <nav className='fixed top-0 w-full z-50 backdrop-blur-md border-b border-white/20'>
         <div className='max-w-7xl px-6 py-4'>
           <div className='flex justify-between items-center'>
@@ -259,7 +257,6 @@ export default function WeddingPortfolio () {
           </div>
         </div>
 
-        {/* Scroll Hints */}
         {isHeroMode && (
           <div className='absolute top-1/2 right-8 transform -translate-y-1/2 z-30'>
             <div className='text-right space-y-4'>
@@ -337,36 +334,36 @@ export default function WeddingPortfolio () {
                 creativity. As the go-to photographer for weddings and special
                 occasions, we are always near you, ready to make your
                 celebrations even more memorable. Our team of best Wedding
-                Photographers in Delhibrings a perfect blend of professionalism
-                and passion to every project. Whether it's a grand wedding, an
+                Photographers in Delhi brings a perfect blend of professionalism
+                and passion to every project. Whether it is a grand wedding, an
                 intimate pre-wedding shoot, ceremonies, or family functions, we
                 have the expertise to create magical memories that will be
                 cherished forever. Our head office is located in New Delhi, but
-                our reach extends across the country. We're dedicated to
+                our reach extends across the country. We are dedicated to
                 providing the best Candid wedding photography services wherever
-                your special moments take place. In recent years, we've had the
-                privilege of capturing hundreds of plus memorable professional
-                photo shoots, including heart-warming Pre-wedding shoots of
-                countless lovely couples. Moreover, our reputation as the best
-                destination pre-wedding photographer has made us the preferred
-                choice for couples seeking dreamy captures in picturesque
-                locations. At Wedding Photo Planet, we keep things simple and
-                convenient for our clients. Reach out to us through the contact
-                numbers on our website, and our experts will assist you with a
-                personalized booking, ensuring your satisfaction at every step.
-                Your vision and expectations are at the core of our photography.
-                We strive to provide you with the most Cinematic and lovely
-                photographs and videos, reflecting the essence of your precious
-                and beautiful moments. With our quality photographs, you'll be
-                able to relive those special moments forever. Seeing the smiles
-                on our client's faces when they see the result of our
-                professional photography skills is what motivates us to keep
-                going further. It's the joy we derive from capturing your
-                happiness that drives us to deliver excellence in every project.
-                Let Wedding Photo Planet be a part of your journey, weaving the
-                magic of cinematic wedding videographyand candid captures into
-                your celebrations. Get in touch with us today and let's create
-                timeless memories together.
+                your special moments take place. In recent years, we have had
+                the privilege of capturing hundreds of plus memorable
+                professional photo shoots, including heart-warming Pre-wedding
+                shoots of countless lovely couples. Moreover, our reputation as
+                the best destination pre-wedding photographer has made us the
+                preferred choice for couples seeking dreamy captures in
+                picturesque locations. At Wedding Photo Planet, we keep things
+                simple and convenient for our clients. Reach out to us through
+                the contact numbers on our website, and our experts will assist
+                you with a personalized booking, ensuring your satisfaction at
+                every step. Your vision and expectations are at the core of our
+                photography. We strive to provide you with the most Cinematic
+                and lovely photographs and videos, reflecting the essence of
+                your precious and beautiful moments. With our quality
+                photographs, you will be able to relive those special moments
+                forever. Seeing the smiles on our client&apos;s faces when they see
+                the result of our professional photography skills is what
+                motivates us to keep going further. It is the joy we derive from
+                capturing your happiness that drives us to deliver excellence in
+                every project. Let Wedding Photo Planet be a part of your
+                journey, weaving the magic of cinematic wedding videography and
+                candid captures into your celebrations. Get in touch with us
+                today and let us create timeless memories together.
               </p>
             </div>
           </div>
@@ -428,7 +425,7 @@ export default function WeddingPortfolio () {
               >
                 Mr. Rajat Verma
               </span>
-              , the creative force behind Wedding Photo Planet – one of the
+              , the creative force behind Wedding Photo Planet, one of the
               finest and most highly professional photography ventures. With his
               love and passion for photography, he has earned the esteemed title
               of the best wedding photographer in Delhi. Together with a team of
@@ -456,7 +453,7 @@ export default function WeddingPortfolio () {
                 : 'translate-y-10 opacity-0'
             }`}
           >
-          <h2
+            <h2
               className='text-5xl font-extralight tracking-wide my-class'
               style={{
                 background:
@@ -470,57 +467,55 @@ export default function WeddingPortfolio () {
             >
               Services We Offer
             </h2>
-               <Image
+            <Image
               src={divider}
               className='w-20 h-40 -mb-20 invert mx-auto'
               width={800}
               height={600}
             />
-
           </div>
-             <CreativeWeddingServices />
+          <CreativeWeddingServices />
         </div>
       </section>
-   
-   <section className='py-32'>
-     <div className=' mx-auto'>
-       <div
-         data-animate='services-title'
-         className={`text-center mb-16 transform transition-all duration-1000 ${
-           isVisible['services-title']
-             ? 'translate-y-0 opacity-100'
-             : 'translate-y-10 opacity-0'
-         }`}
-       >
-         <h2
-           className='text-5xl font-extralight tracking-wide my-class'
-           style={{
-             background:
-               'linear-gradient(90deg, #a88a00 0%, #ffd700 25%, #fffacd 50%, #ffd700 75%, #a88a00 100%)',
-             WebkitBackgroundClip: 'text',
-             WebkitTextFillColor: 'transparent',
-             backgroundClip: 'text',
-             textFillColor: 'transparent',
-             fontWeight: 'bold'
-           }}
-         >
-           Explore our Gallery
-         </h2>
-         <Image
-           src={divider}
-           className='w-20 h-40 -mb-20 invert mx-auto'
-           width={800}
-           height={600}
-         />
 
-       </div>
-       <MinimalGallery />
-     </div>
-   </section>
+      <section className='py-32'>
+        <div className=' mx-auto'>
+          <div
+            data-animate='services-title'
+            className={`text-center mb-16 transform transition-all duration-1000 ${
+              isVisible['services-title']
+                ? 'translate-y-0 opacity-100'
+                : 'translate-y-10 opacity-0'
+            }`}
+          >
+            <h2
+              className='text-5xl font-extralight tracking-wide my-class'
+              style={{
+                background:
+                  'linear-gradient(90deg, #a88a00 0%, #ffd700 25%, #fffacd 50%, #ffd700 75%, #a88a00 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                textFillColor: 'transparent',
+                fontWeight: 'bold'
+              }}
+            >
+              Explore our Gallery
+            </h2>
+            <Image
+              src={divider}
+              className='w-20 h-40 -mb-20 invert mx-auto'
+              width={800}
+              height={600}
+            />
+          </div>
+          <MinimalGallery />
+        </div>
+      </section>
 
-   <ScrollReviewCards />
-   <WhyChooseUs />
-     <Image
+      <ScrollReviewCards />
+      <WhyChooseUs />
+      <Image
         src={headthree}
         alt='Wedding Photography'
         className='w-full h-96 object-cover'
@@ -528,7 +523,7 @@ export default function WeddingPortfolio () {
         height={600}
       />
       <CandidPhotographyUI />
-        <section className='py-32'>
+      <section className='py-32'>
         <div className='max-w-6xl mx-auto px-6'>
           <div className='flex flex-col text-center items-center'>
             <div
@@ -561,7 +556,6 @@ export default function WeddingPortfolio () {
                 height={600}
               />
               <p className='text-lg leading-relaxed text-justify text-gray-300'>
-
                 <span
                   className='italic font-bold'
                   style={{
@@ -574,14 +568,28 @@ export default function WeddingPortfolio () {
                     fontWeight: 'bold'
                   }}
                 >
-                 Candid photography
-                </span> is an art that celebrates the beauty of spontaneity and genuine emotions. It goes beyond posed shots, capturing moments as they unfold naturally, without any interference. At Wedding Photo Planet, we take pride in being the best candid photographer in Delhi, adept at freezing the fleeting moments of joy, love, and laughter. We take immense pride in our Top-Rated Wedding Photographers, who work diligently to deliver extraordinary results. Our goal is to make your memories eternal, with each photograph reflecting the love and joy of your precious moments. Whether you're seeking the best candid photographer in Delhi or a talented wedding videographer near you, Wedding Photo Planet is here to turn your dreams into reality. Our dedicated team ensures that your journey with us is effortless, enjoyable, and filled with memories that will last a lifetime.
+                  Candid photography
+                </span>{' '}
+                is an art that celebrates the beauty of spontaneity and genuine
+                emotions. It goes beyond posed shots, capturing moments as they
+                unfold naturally, without any interference. At Wedding Photo
+                Planet, we take pride in being the best candid photographer in
+                Delhi, adept at freezing the fleeting moments of joy, love, and
+                laughter. We take immense pride in our Top-Rated Wedding
+                Photographers, who work diligently to deliver extraordinary
+                results. Our goal is to make your memories eternal, with each
+                photograph reflecting the love and joy of your precious moments.
+                Whether you are seeking the best candid photographer in Delhi or
+                a talented wedding videographer near you, Wedding Photo Planet
+                is here to turn your dreams into reality. Our dedicated team
+                ensures that your journey with us is effortless, enjoyable, and
+                filled with memories that will last a lifetime.
               </p>
             </div>
           </div>
         </div>
       </section>
-        <Image
+      <Image
         src={headlast}
         alt='Wedding Photography'
         className='w-full h-96 object-cover'
