@@ -16,12 +16,14 @@ import divider from '@/../public/images/divider.webp'
 import weddingImage from '@/../public/images/secondhead.jpg'
 import headthree from '@/../public/images/headthree.jpg'
 import headlast from '@/../public/images/headlast.jpg'
-import CreativeWeddingServices from './CreativeWeddingServices'
-import MinimalGallery from './MinimalGallery'
-import AnimatedFooter from './Footer'
-import ScrollReviewCards from './ScrollReviewCards'
-import WhyChooseUs from './WhyChooseUs'
-import CandidPhotographyUI from './CandidPhotographyUI'
+import dynamic from 'next/dynamic'
+
+const CreativeWeddingServices = dynamic(() => import('./CreativeWeddingServices'), { ssr: false })
+const MinimalGallery = dynamic(() => import('./MinimalGallery'), { ssr: false })
+const AnimatedFooter = dynamic(() => import('./Footer'), { ssr: false })
+const ScrollReviewCards = dynamic(() => import('./ScrollReviewCards'), { ssr: false })
+const WhyChooseUs = dynamic(() => import('./WhyChooseUs'), { ssr: false })
+const CandidPhotographyUI = dynamic(() => import('./CandidPhotographyUI'), { ssr: false })
 
 export default function WeddingPortfolio () {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
